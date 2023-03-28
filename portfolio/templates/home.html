@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block home %}
+<h3 class="skills-title">Skills</h3>
+<div class="skills">
+    <div class="skill">Python</div>
+    <div class="skill">SQL</div>
+    <div class="skill">Flask</div>
+    <div class="skill">Html5</div>
+    <div class="skill">CSS</div>
+    <div class="skill">Tableau</div>
+</div>
+    <h3 id="cert"><a href="https://www.credly.com/users/gencho-angelov/badges" />Certificates</h3>
+
+<div  id="Certificates">
+
+    <a href="{{url_for('static',filename='docs/data.pdf')}}" >
+        <img id="Certificates" src="{{ url_for('static', filename='images/data.png')}}"  ></a>
+
+    <a href="{{url_for('static',filename='docs/python1.pdf')}}" >
+    <img id="Certificates" src="{{ url_for('static', filename='images/python1.png')}}"  ></a>
+
+    <a href="{{url_for('static',filename='docs/python2.pdf')}}" >
+    <img id="Certificates" src="{{ url_for('static', filename='images/python2.png')}}"  ></a>
+</div>
+
+{% endblock %}

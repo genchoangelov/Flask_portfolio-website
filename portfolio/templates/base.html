@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      {% include 'include/navbar.html' %}
+
+    <link href="{{ url_for('static', filename='style.css')}}" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+      {% block title %}
+
+      {% endblock %}
+    </title>
+    <br>
+    <div id="wrapper" class="fade-in">
+  <!-- Intro -->
+        <div id="intro">
+            <h1>Gencho Angelov Portfolio<br />
+            </h1>
+            <p>Data Analyst experienced with SQL, Python and Tableau</p>
+            <ul class="actions">
+            </ul>
+        </div>
+    </div>
+  </head>
+  <br>
+  <body class=is-preload">
+    {% block home %}
+    {% endblock %}
+
+    {% block body %}
+    {% endblock %}
+
+    {% block contact %}
+    {% endblock %}
+
+    {% block resume %}
+    {% endblock %}
+
+  </body>
+</html>

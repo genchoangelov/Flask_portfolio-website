@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}
+    Resume Page
+{% endblock %}
+
+{% block resume %}
+<div class="cont">
+    <a href="{{url_for('static',filename='docs/Resume-GENCHO-ANGELOV.pdf')}}" download id="download" >
+        <input type="button" value="Download" >
+    </a>
+</div>
+ <p> Download My Resume</p>
+{% endblock %}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}
+    Portfolio Page
+{% endblock %}
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    {% block body %}
+<!-- Main -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2><a href="https://github.com/genchoangelov/Portfolio-Projects/blob/main/btcftm.corr.analysis.py"><br>Correlation Analysis in Python<br/>
+                    </a></h2>
+                    <a href="https://github.com/genchoangelov/Portfolio-Projects/blob/main/btcftm.corr.analysis.py" >
+                        <img src="{{url_for('static',filename='images/ftm-btc.jpg')}}" alt="FTM-BTC" class="image" /></a>
+
+                    <p> This python project uses live data for Bitcoin price analysis. The data was extracted using Rest API. The data was
+                        structured into tables so that I can use it to
+                        visualize correlations. Libraries like Pandas, Matplotlib, Mplfinance help for the analysis and vizualization of the information.</p>
+                </header>
+
+                <ul class="actions special">
+                    <li><a href="https://github.com/genchoangelov/Portfolio-Projects/blob/main/btcftm.corr.analysis.py" class="button large">View Project</a></li>
+                </ul>
+            </article>
+            <article class="post featured">
+                <header class="major">
+                    <h2><a href="https://github.com/genchoangelov/SQL_Portfolio_Projects/blob/main/CreditCard.sql"><br>SQL Analysis Credit Card<br />
+                    </a></h2>
+                </header>
+                    <a href="https://github.com/genchoangelov/SQL_Portfolio_Projects/blob/main/CreditCard.sql" >
+                        <img src="{{url_for('static',filename='images/card.jpg')}}" alt="CreditCard" class="image" /></a><br>
+
+                    <p>In this project I use a credit card database to find customers who would abandon the services of the credit card they are using.
+                        The analysis is based on the behavior of customers who have already left the service. It is then applied to existing customers to identify potential churners.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/genchoangelov/SQL_Portfolio_Projects/blob/main/CreditCard.sql" class="button">View Project</a></li>
+                    </ul>
+            </article>
+            <article class="post featured">
+                <header class="major">
+                    <span class="date"></span>
+                    <h2><a href="https://public.tableau.com/app/profile/gencho.angelov"><br>Tableau Project visualizations<br />
+                    </a></h2>
+                </header>
+                <a href="https://public.tableau.com/app/profile/gencho.angelov" >
+                    <img src="{{url_for('static',filename='images/tableau.jpg')}}" alt="Tableau" class="image" /></a><br>
+
+                <p>Tableau Dashboards on some of my Projects</p>
+                <ul class="actions special">
+                    <li><a href="https://public.tableau.com/app/profile/gencho.angelov" class="button">View Project</a></li>
+                </ul>
+            </article>
+            <article class="post featured">
+                <header class="major">
+                    <span class="date"></span>
+                    <h2><a href="https://github.com/genchoangelov/Data_Collection"><br>Data Collection<br />
+                    </a></h2>
+                </header>
+                <a href="https://github.com/genchoangelov/Data_Collection" >
+                    <img src="{{url_for('static',filename='images/price.jpg')}}" alt="DataCollect" class="image" /></a><br>
+
+                <p>In this project I extracted live Price data via FTX and Kraken API. I connected my local server to MySQL Database with python. </p>
+                <ul class="actions special">
+                    <li><a href="https://github.com/genchoangelov/Data_Collection" class="button">View Project</a></li>
+                </ul>
+            </article>
+        </div>
+    {% endblock %}
+</body>
+</html>
